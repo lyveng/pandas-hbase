@@ -11,7 +11,7 @@ Known Issues:
 Writing DataFrame to HBase
 --------------------------
 
-.. code-block:: python
+..  code-block:: python
     import happybase
     import numpy as np
     import pandas as pd
@@ -31,7 +31,7 @@ Writing DataFrame to HBase
 Reading DataFrame from HBase
 ----------------------------
 
-.. code-block:: python
+..  code-block:: python
     import happybase
     import numpy as np
     import pandas as pd
