@@ -14,21 +14,22 @@ Writing DataFrame to HBase
 
 Establish hbase connection using happybase and write the dataframe.
 
-.. code-block:: python
-   import happybase
-   import numpy as np
-   import pandas as pd
-   import pandas-hbase as pdh
-   connection = None
-   try:
-       connection = happybase.Connection('127.0.0.1')
-       connection.open()
-       df = pd.DataFrame(np.random.randn(10, 5), columns=['a', 'b', 'c', 'd', 'e'])
-       df['f'] = 'hello world'
-       pdh.to_hbase(df, connection, 'sample_table', 'df_key', cf='cf')
-   finally:
-       if connection:
-           connection.close()
+```python
+    import happybase
+    import numpy as np
+    import pandas as pd
+    import pandas-hbase as pdh
+    connection = None
+    try:
+        connection = happybase.Connection('127.0.0.1')
+        connection.open()
+        df = pd.DataFrame(np.random.randn(10, 5), columns=['a', 'b', 'c', 'd', 'e'])
+        df['f'] = 'hello world'
+        pdh.to_hbase(df, connection, 'sample_table', 'df_key', cf='cf')
+    finally:
+        if connection:
+            connection.close()
+```
 
 
 Reading DataFrame from HBase
@@ -37,18 +38,18 @@ Reading DataFrame from HBase
 
 Establish hbase connection using happybase and read the dataframe.
 
-.. code-block:: python
-   import happybase
-   import numpy as np
-   import pandas as pd
-   import pandas-hbase as pdh
-   connection = None
-   try:
-       connection = happybase.Connection('127.0.0.1')
-       connection.open()
-       df = read_hbase(connection, 'sample_table', 'df_key', cf='cf')
-       print df
-   finally:
-       if connection:
-           connection.close()
-
+```python
+import happybase
+import numpy as np
+import pandas as pd
+import pandas-hbase as pdh
+connection = None
+try:
+    connection = happybase.Connection('127.0.0.1')
+    connection.open()
+    df = read_hbase(connection, 'sample_table', 'df_key', cf='cf')
+    print df
+finally:
+    if connection:
+        connection.close()
+```
