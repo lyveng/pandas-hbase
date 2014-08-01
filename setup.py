@@ -8,6 +8,8 @@ setup(
     author='Livingstone S E',
     author_email='livingstone.s.e@gmail.com',
     packages=['pdhbase'],
+    url='https://pypi.python.org/pypi/pdhbase',
+    license='LICENSE',
     description='Read and write pandas dataframes to hbase.',
     long_description=open('README.rst').read(),
     install_requires=[
