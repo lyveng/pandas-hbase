@@ -47,7 +47,7 @@ connection = None
 try:
     connection = happybase.Connection('127.0.0.1')
     connection.open()
-    df = read_hbase(connection, 'sample_table', 'df_key', cf='cf')
+    df = pdh.read_hbase(connection, 'sample_table', 'df_key', cf='cf')
     print df
 finally:
     if connection:
