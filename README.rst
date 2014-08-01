@@ -10,6 +10,7 @@ Known Issues:
 
 Writing DataFrame to HBase
 --------------------------
+
 .. code-block:: python
     import happybase
     import numpy as np
@@ -26,8 +27,10 @@ Writing DataFrame to HBase
         if connection:
             connection.close()
 
+
 Reading DataFrame from HBase
 ----------------------------
+
 .. code-block:: python
     import happybase
     import numpy as np
@@ -42,3 +45,4 @@ Reading DataFrame from HBase
     finally:
         if connection:
             connection.close()
+
