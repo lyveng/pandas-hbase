@@ -18,7 +18,7 @@ Establish hbase connection using happybase and write the dataframe.
     import happybase
     import numpy as np
     import pandas as pd
-    import pandas-hbase as pdh
+    import pdhbase as pdh
     connection = None
     try:
         connection = happybase.Connection('127.0.0.1')
@@ -42,7 +42,7 @@ Establish hbase connection using happybase and read the dataframe.
 import happybase
 import numpy as np
 import pandas as pd
-import pandas-hbase as pdh
+import pdhbase as pdh
 connection = None
 try:
     connection = happybase.Connection('127.0.0.1')
