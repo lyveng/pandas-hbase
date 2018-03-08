@@ -4,6 +4,10 @@ Pandas HBase IO Helper
 
 Persist pandas DataFrame objects to HBase and read them back later.
 
+Pre-requisites
+- Hbase Thrift server running in 127.0.0.1:9090
+- Hbase table sample_table created with column family cf
+
 Known Issues:
 - Works only with DataFrames that have integer indices.
 - DataFrames to be persisted should not have ':' in column names
