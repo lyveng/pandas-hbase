@@ -1,0 +1,3 @@
+include setup.py
+include pdhbase/__init__.py
+include README.rst

@@ -4,7 +4,7 @@ from distutils.core import setup
 
 setup(
     name='pdhbase',
-    version='0.1.0',
+    version='0.1.2-rc1',
     author='Livingstone S E',
     author_email='livingstone.s.e@gmail.com',
     packages=['pdhbase'],
